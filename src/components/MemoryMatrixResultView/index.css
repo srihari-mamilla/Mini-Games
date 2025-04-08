@@ -1,0 +1,72 @@
+.progressbar-bg {
+  background-color: #1a202c;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progrssbar-emojis-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+  margin-bottom: 3px;
+}
+
+.progressbar-emoji {
+  height: 48px;
+  width: 48px;
+}
+
+.levels-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 720px;
+}
+
+.level-heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: bree serif;
+}
+
+.progress-bar {
+  width: 720px;
+  height: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.filler {
+  background-color: blue;
+  height: 100%;
+}
+
+.congratulations-heading {
+  color: #467aff;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: bree serif;
+}
+
+.description-heading {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: bree serif;
+  margin-top: 0;
+}
+
+.play-again-button {
+  background-color: #467aff;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}

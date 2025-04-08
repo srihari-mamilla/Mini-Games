@@ -1,0 +1,59 @@
+.cfmg-rules-view-container {
+  min-height: 100vh;
+  background-color: #14332e;
+  padding: 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cfmg-rules-view-responsive-container {
+  width: 85%;
+}
+
+.cfmg-rules-view-heading-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cfmg-rules-list-heading {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+
+.cfmg-rules-list {
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cfmg-rule {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 45%;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.cfmg-rules-view-start-playing-button {
+  background-color: white;
+  color: #223a5f;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

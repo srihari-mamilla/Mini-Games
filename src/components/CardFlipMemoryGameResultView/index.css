@@ -1,0 +1,66 @@
+/* Result View */
+.cfmg-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #14332e;
+}
+
+.cfmg-result-content {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.cfmg-result-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.cfmg-result-heading {
+  color: #4ade80;
+  font-family: 'Bree serif';
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cfmg-result-flip-count {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.cfmg-result-text {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* .cfmg-result-score {
+  color: white;
+  font-family: Bree Serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+} */
+
+.cfmg-play-again-button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #223a5f;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

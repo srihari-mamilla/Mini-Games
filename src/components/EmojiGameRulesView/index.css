@@ -1,0 +1,91 @@
+.emoji-game-rules-view-container {
+  background-image: linear-gradient(#9796f0, #fbc7d4);
+  min-height: 100vh;
+  padding: 30px 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-view-responsive-container {
+  width: 85%;
+}
+
+.back-button {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.rules-card {
+  width: 1201;
+  height: 776;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border-width: 3px;
+
+  background: #ffffff33;
+  border: 3px solid #ffffff30;
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.rules-view-game-image {
+  width: 350px;
+}
+
+.game-image-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rules-heading {
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 28px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.rules-list {
+  color: #475569;
+}
+
+.rule-text {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0px;
+}
+
+.start-playing-button {
+  background-color: #334155;
+  color: white;
+  border-radius: 12px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+
+  border: none;
+  outline: none;
+}

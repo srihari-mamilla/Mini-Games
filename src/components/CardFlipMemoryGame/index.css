@@ -1,0 +1,192 @@
+.cfmg-game-play-container {
+  min-height: 100vh;
+  padding: 20px 0px;
+  background-image: url('https://res.cloudinary.com/dzbvm25qt/image/upload/v1744028256/44350_1_xnkb5t.png');
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.cfmg-buttons-conatiner {
+  width: 80%;
+  /* margin-top: 30px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cfmg-back-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 20px;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cfmg-rules-button {
+  background-color: transparent;
+  color: white;
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.cfmg-rules-modal-list {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cfmg-rules-modal-rule {
+  color: #475569;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.cfmg-game-heading {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: 'Bree Serif';
+  text-align: center;
+  word-spacing: 5px;
+}
+
+/* index.css */
+
+/* Base Styles */
+.cfmg-game-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cfmg-stats {
+  display: flex;
+  gap: 100px;
+}
+
+.cfmg-flip-count,
+.cfmg-score,
+.cfmg-timer {
+  color: white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Cards Grid Layout */
+.cfmg-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 20px;
+  background-color: #154315;
+  border: 2px solid #409c40;
+  border-radius: 24px;
+}
+
+.cfmg-card-item {
+  aspect-ratio: 1/1; /* Ensures square cards */
+}
+
+.cfmg-card-button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #7cbd91;
+  border-radius: 16px;
+  outline: none;
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.cfmg-card-button.flipped {
+  transform: rotateY(180deg);
+}
+
+.cfmg-card-back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: #5e9b72;
+}
+
+.cfmg-card-image {
+  width: 100px;
+  height: 90px;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+}
+
+/* Rules Modal */
+.rps-modal-heading {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cfmg-rules-modal-list {
+  padding-left: 20px;
+}
+
+.cfmg-rules-modal-rule {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cfmg-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cfmg-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

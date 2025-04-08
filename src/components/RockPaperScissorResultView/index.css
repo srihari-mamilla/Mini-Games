@@ -1,0 +1,126 @@
+.rps-result-view-container {
+  min-height: 100vh;
+  background-color: #223a5f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rps-result-view-heading {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.rps-game-result-card {
+  width: 700px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-status-image {
+  width: 110px;
+}
+
+.score-card-text {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.rps-score-container {
+  background-color: white;
+  width: 130px;
+  height: 100px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rps-score-container-heading {
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.rps-score-container-text {
+  color: #223a5f;
+  font-family: 'HK Grotesk';
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.rps-user-choices-container {
+  width: 700px;
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rps-user-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-name {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.rps-user-choice-img {
+  width: 188px;
+  height: 188px;
+}
+
+.rps-user-choices-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rps-game-status-emoji {
+}
+
+.rps-play-again-button {
+  background-color: white;
+  color: #223a5f;
+  font-family: 'Bree Serif';
+  font-size: 15px;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.rps-user-resut {
+  color: white;
+  font-family: Bree Serif;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+}

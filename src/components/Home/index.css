@@ -1,0 +1,95 @@
+.home-container {
+  background-image: linear-gradient(#834d9b, #d04ed6);
+  min-height: 100vh;
+  font-family: 'Roboto';
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-heading {
+  color: #f8fafc;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 35px;
+  }
+}
+
+.game-cards-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.game-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(40% - 10px);
+}
+
+@media (max-width: 767px) {
+  .game-cards-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 80%;
+  }
+}
+
+.game-image {
+  width: 200px;
+  height: 150px;
+  top: 240px;
+  left: 315px;
+}
+
+.game-title {
+  color: #334155;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.styled-game-title {
+  font-family: Bree Serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card-flip-game-image {
+  width: 90%;
+  height: 200px;
+}
+
+.game-link {
+  text-decoration: none;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
