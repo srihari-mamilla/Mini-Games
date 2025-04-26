@@ -17,6 +17,7 @@ const CardFlipMemoryGameRulesView = props => {
         </button>
         <div className="cfmg-rules-view-heading-image-container">
           <img
+            className="cfmg-rules-view-img"
             src="https://res.cloudinary.com/dzbvm25qt/image/upload/v1744025070/animals_po0ief.png"
             alt="card flip memory game"
           />
@@ -53,7 +54,7 @@ const CardFlipMemoryGameRulesView = props => {
           className="cfmg-rules-view-start-playing-button"
           onClick={startGame}
         >
-          Start Playing
+          Start playing
         </button>
       </div>
     </div>

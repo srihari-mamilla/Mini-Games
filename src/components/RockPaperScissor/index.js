@@ -81,7 +81,8 @@ class RockPaperScissor extends Component {
   renderGamePlayView = () => {
     const {isRulesOpen} = this.state
 
-    const customStyles = {
+    /*
+    const modalStyle = {
       content: {
         width: '80%',
         height: '620px',
@@ -95,6 +96,7 @@ class RockPaperScissor extends Component {
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
       },
     }
+    */
 
     return (
       <div className="game-play-view-container">
@@ -116,7 +118,8 @@ class RockPaperScissor extends Component {
           <Modal
             isOpen={isRulesOpen}
             onRequestClose={this.toggleRulesModal}
-            style={customStyles}
+            className="rps-custom-modal"
+            overlayClassName="rps-custom-overlay"
           >
             <h1 className="rps-modal-heading">Rules</h1>
             <ul className="rps-modal-rules-list">

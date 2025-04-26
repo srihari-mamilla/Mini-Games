@@ -72,6 +72,31 @@
   padding: 8px 16px;
 }
 
+.emoji-custom-modal {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.emoji-custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .emoji-custom-modal {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+  }
+}
+
 .modal-heading {
   color: #334155;
   font-family: 'Roboto';

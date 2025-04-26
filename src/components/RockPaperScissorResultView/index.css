@@ -27,14 +27,52 @@
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .rps-game-result-card {
+    display: none;
+    width: 85%;
+    flex-direction: column;
+  }
+}
+
+.rps-sm-game-result-card {
+  display: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px 20px 0px 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-sm-game-result-card {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rps-sm-img-score-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .game-status-image {
   width: 110px;
+}
+
+@media screen and (max-width: 767px) {
+  .score-card-text-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .score-card-text {
   color: white;
   font-family: Bree Serif;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 32px;
 }
@@ -75,7 +113,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-user-choices-container {
+    width: 85%;
+  }
 }
 
 .rps-user-choice {
@@ -96,13 +139,34 @@
   height: 188px;
 }
 
+@media screen and (max-width: 767px) {
+  .player-name {
+    font-size: 20px;
+  }
+
+  .rps-user-choice-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .rps-user-choices-result-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 .rps-game-status-emoji {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 767px){
+  .rps-game-status-emoji{
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .rps-play-again-button {
@@ -123,4 +187,16 @@
   font-weight: 400;
   font-size: 28px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px){
+  .rps-user-resut{
+    font-size: 20px;
+  }
+
+  .rps-play-again-button{
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+  }
 }

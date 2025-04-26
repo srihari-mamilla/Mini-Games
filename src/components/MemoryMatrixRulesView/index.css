@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .mm-rules-view-img {
+    width: 300px;
+  }
+}
+
 .mm-rules-list-heading {
   color: white;
   font-family: Bree Serif;
@@ -36,6 +42,13 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .mm-rules-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}
+
 .mm-rule {
   color: white;
   font-family: Bree Serif;
@@ -43,6 +56,12 @@
   font-size: 20px;
   width: 45%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rule {
+    width: 100%;
+  }
 }
 
 .mm-rules-view-start-playing-button {
@@ -55,4 +74,13 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-view-start-playing-button {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+  }
 }

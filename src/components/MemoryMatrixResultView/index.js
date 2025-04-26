@@ -13,7 +13,7 @@ const MemoryMatrixResultView = props => {
   const progressPercentage = (displayLevel / maxLevel) * 100
 
   return (
-    <div className="progressbar-bg">
+    <div className="mm-result-view-bg">
       <div className="progrssbar-emojis-container">
         <img
           src="https://res.cloudinary.com/dv6ikqksk/image/upload/v1711000742/05_Pokerface_xnvjfb.png"

@@ -39,12 +39,44 @@
   border-radius: 8px;
 }
 
+.mm-custom-modal {
+  width: 80%;
+  height: 560px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-custom-modal {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+  }
+}
+
+.mm-custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .mm-rules-modal-list {
   height: 410px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-modal-list {
+    height: auto;
+    flex-wrap: no wrap;
+  }
 }
 
 .mm-rules-modal-rule {
@@ -54,6 +86,12 @@
   font-size: 20px;
   width: 45%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .mm-rules-modal-rule {
+    width: 90%;
+  }
 }
 
 .mm-game-heading {
@@ -74,18 +112,23 @@
 
 .mm-boxes-container {
   list-style-type: none;
-
+  padding: 0;
+  width: 85%;
   display: grid;
-  /* Starts with 3, will be overridden */
-  grid-template-columns: repeat(3, 80px);
   grid-gap: 10px;
   margin: 20px auto;
   justify-content: center;
 }
 
+@media screen and (min-width:768px){
+  .mm-boxes-container{
+    max-width: 600px;
+  }
+}
+
 .mm-box {
-  width: 80px;
-  height: 80px;
+  aspect-ratio: 1;
+  width: 100%;
   background-color: #f1f1f1;
   border-radius: 8px;
   border: none;

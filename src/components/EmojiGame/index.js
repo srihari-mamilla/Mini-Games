@@ -81,7 +81,8 @@ class EmojiGame extends Component {
     const {currentScore, topScore, isGameEnd, isWon} = this.state
     const {isRulesOpen} = this.state
 
-    const customStyles = {
+    /*
+    const modalStyle = {
       content: {
         width: '600px',
         height: '500px',
@@ -95,6 +96,7 @@ class EmojiGame extends Component {
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
       },
     }
+    */
 
     return (
       <div className="bg-container">
@@ -132,7 +134,8 @@ class EmojiGame extends Component {
                 <Modal
                   isOpen={isRulesOpen}
                   onRequestClose={this.toggleRulesModal}
-                  style={customStyles}
+                  className="emoji-custom-modal"
+                  overlayClassName="emoji-custom-overlay"
                 >
                   <h2 className="modal-heading">Rules</h2>
                   <ul className="modal-rules-list">

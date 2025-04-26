@@ -23,7 +23,7 @@ const EmojiGameRulesView = props => {
               src="https://res.cloudinary.com/dzbvm25qt/image/upload/v1743165128/Asset_1_4x_1_1_bjqieg.png"
               alt="emoji game"
             />
-            <h2>Emoji Game</h2>
+            <h2 className="emoji-game-title">Emoji Game</h2>
           </div>
           <div className="rules-container">
             <h2 className="rules-heading">Rules</h2>
@@ -70,7 +70,7 @@ const EmojiGameRulesView = props => {
               className="start-playing-button"
               onClick={setIsStartedPlaying}
             >
-              Start Playing
+              Start playing
             </button>
           </div>
         </div>

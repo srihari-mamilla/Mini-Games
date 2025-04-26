@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .cfmg-rules-view-img {
+    width: 85%;
+  }
+}
+
 .cfmg-rules-list-heading {
   color: white;
   font-family: Bree Serif;
@@ -46,6 +52,17 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .cfmg-rules-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+
+  .cfmg-rule {
+    width: 100%;
+  }
+}
+
 .cfmg-rules-view-start-playing-button {
   background-color: white;
   color: #223a5f;
@@ -56,4 +73,13 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+  .cfmg-rules-view-start-playing-button{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+  }
 }

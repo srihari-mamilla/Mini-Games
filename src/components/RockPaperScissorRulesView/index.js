@@ -87,7 +87,7 @@ const RockPaperScissorRulesView = props => {
           className="rps-rules-view-start-playing-button"
           onClick={startGame}
         >
-          Start Playing
+          Start playing
         </button>
       </div>
     </div>

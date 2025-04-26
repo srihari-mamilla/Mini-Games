@@ -1,4 +1,3 @@
-/* Result View */
 .cfmg-result-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@
 }
 
 .cfmg-result-content {
-  padding: 30px;
   text-align: center;
   width: 100%;
 }
@@ -22,12 +20,25 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .cfmg-result-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .cfmg-result-heading {
   color: #4ade80;
   font-family: 'Bree serif';
   font-weight: 400;
   font-size: 36px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-result-heading {
+    font-size: 24px;
+  }
 }
 
 .cfmg-result-flip-count {
@@ -37,12 +48,24 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .cfmg-result-flip-count {
+    font-size: 16px;
+  }
+}
+
 .cfmg-result-text {
   color: white;
   font-family: Bree Serif;
   font-weight: 400;
   font-size: 26px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .cfmg-result-text {
+    font-size: 18px;
+  }
 }
 
 /* .cfmg-result-score {

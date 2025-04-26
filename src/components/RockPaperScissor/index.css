@@ -39,6 +39,31 @@
   border-radius: 8px;
 }
 
+.rps-custom-modal {
+  width: 80%;
+  height: 560px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-custom-modal {
+    width: 90%;
+    height: 85%;
+    overflow-y: auto;
+  }
+}
+
+.rps-custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .game-heading {
   color: white;
   font-weight: 400;
@@ -117,6 +142,13 @@
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .rps-modal-rules-list {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}
+
 .rps-modal-rule {
   color: #475569;
   font-family: Bree Serif;
@@ -126,4 +158,10 @@
   letter-spacing: 0px;
   width: 45%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .rps-modal-rule {
+    width: 95%;
+  }
 }

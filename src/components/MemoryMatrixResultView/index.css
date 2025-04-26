@@ -1,4 +1,4 @@
-.progressbar-bg {
+.mm-result-view-bg {
   background-color: #1a202c;
   height: 100vh;
   background-size: cover;
@@ -16,9 +16,22 @@
   margin-bottom: 3px;
 }
 
+@media screen and (max-width: 767px) {
+  .progrssbar-emojis-container {
+    width: 85%;
+  }
+}
+
 .progressbar-emoji {
   height: 48px;
   width: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .progressbar-emoji {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .levels-container {
@@ -26,6 +39,12 @@
   flex-direction: row;
   justify-content: space-between;
   width: 720px;
+}
+
+@media screen and (max-width: 767px){
+  .levels-container{
+    width: 80%;
+  }
 }
 
 .level-heading {
@@ -41,6 +60,12 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .progress-bar {
+    width: 85%;
+  }
+}
+
 .filler {
   background-color: blue;
   height: 100%;
@@ -53,12 +78,24 @@
   font-family: bree serif;
 }
 
+@media screen and (max-width: 767px) {
+  .congratulations-heading {
+    font-size: 26px;
+  }
+}
+
 .description-heading {
   color: #ffffff;
   font-size: 36px;
   font-weight: 400;
   font-family: bree serif;
   margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .description-heading {
+    font-size: 18px;
+  }
 }
 
 .play-again-button {

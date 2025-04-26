@@ -119,10 +119,12 @@ class MemoryMatrix extends Component {
         this.moveToNextLevel()
       }
     } else {
-      // Show wrong selection and end game immediately
-      this.setState({
-        wrongSelection: boxId,
-        gameStatus: gameStatusConstants.end,
+      // First show wrong selection
+      this.setState({wrongSelection: boxId}, () => {
+        // Then after a brief delay, show results
+        setTimeout(() => {
+          this.setState({gameStatus: gameStatusConstants.end})
+        }, 500) // 0.5 second delay to show the red box
       })
     }
   }
@@ -201,7 +203,8 @@ class MemoryMatrix extends Component {
   renderGamePlayView = () => {
     const {level, isRulesOpen, gridSize} = this.state
 
-    const customStyles = {
+    /*
+    const modelStyle = {
       content: {
         width: '80%',
         height: '560px',
@@ -215,6 +218,7 @@ class MemoryMatrix extends Component {
         backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
       },
     }
+    */
 
     return (
       <div className="mm-game-play-container">
@@ -236,7 +240,8 @@ class MemoryMatrix extends Component {
           <Modal
             isOpen={isRulesOpen}
             onRequestClose={this.toggleRulesModal}
-            style={customStyles}
+            className="mm-custom-modal"
+            overlayClassName="mm-custom-overlay"
           >
             <h1 className="rps-modal-heading">Rules</h1>
             <ul className="mm-rules-modal-list">
@@ -288,7 +293,10 @@ class MemoryMatrix extends Component {
         <ul
           className="mm-boxes-container"
           style={{
-            gridTemplateColumns: `repeat(${gridSize}, 80px)`,
+            gridTemplateColumns:
+              level <= 5
+                ? `repeat(${gridSize}, minmax(30px, 1fr))`
+                : `repeat(auto-fit, minmax(30px, 1fr))`,
           }}
         >
           {this.renderBoxes()}

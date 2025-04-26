@@ -234,7 +234,8 @@ class CardFlipMemoryGame extends Component {
   renderGamePlayView = () => {
     const {isRulesOpen, score, timeLeft, flipCount} = this.state
 
-    const customStyles = {
+    /*
+    const modelStyle = {
       content: {
         width: '80%',
         height: '550px',
@@ -248,6 +249,7 @@ class CardFlipMemoryGame extends Component {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
       },
     }
+     */
 
     return (
       <div className="cfmg-game-play-container">
@@ -269,7 +271,8 @@ class CardFlipMemoryGame extends Component {
           <Modal
             isOpen={isRulesOpen}
             onRequestClose={this.toggleRulesModal}
-            style={customStyles}
+            className="cfmg-custom-modal"
+            overlayClassName="cfmg-custom-overlay"
           >
             <h1 className="rps-modal-heading">Rules</h1>
             <ul className="cfmg-rules-modal-list">
@@ -318,6 +321,13 @@ class CardFlipMemoryGame extends Component {
             <p className="cfmg-flip-count">Card flip count - {flipCount}</p>
             <p className="cfmg-timer">{this.formatTime(timeLeft)}</p>
             <p className="cfmg-score">Score - {score}</p>
+          </div>
+          <div className="cfmg-sm-stats">
+            <p className="cfmg-timer">{this.formatTime(timeLeft)}</p>
+            <div className="cfmg-sm-count-score-stats">
+              <p className="cfmg-flip-count">Card flip count - {flipCount}</p>
+              <p className="cfmg-score">Score - {score}</p>
+            </div>
           </div>
         </div>
         <ul className="cfmg-cards-container">{this.renderCards()}</ul>

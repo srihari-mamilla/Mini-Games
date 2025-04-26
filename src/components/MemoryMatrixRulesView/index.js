@@ -18,6 +18,7 @@ const MemoryMatrixRulesView = props => {
         <div className="mm-rules-view-heading-image-container">
           <h1 className="game-heading">Memory Matrix</h1>
           <img
+            className="mm-rules-view-img"
             src="https://res.cloudinary.com/dzbvm25qt/image/upload/v1743771927/memory_tm9mf2.png"
             alt="memory matrix"
           />
@@ -60,7 +61,7 @@ const MemoryMatrixRulesView = props => {
           className="mm-rules-view-start-playing-button"
           onClick={startGame}
         >
-          Start Playing
+          Start playing
         </button>
       </div>
     </div>
